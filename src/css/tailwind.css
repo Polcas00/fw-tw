@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+    .wrapper {
+        @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl;
+    }
+
+    .button {
+        @apply bg-bright-red text-very-light-gray block w-max py-4 px-12 rounded-full
+    }
+
+    /* .form{
+        grid-area: "form";
+    }
+    .navigation{
+        grid-area: "navigation";
+    }
+    .social-media{
+        grid-area: "social-media";
+    }
+    .logo{
+        grid-area: "logo";
+    }
+    .copy{
+        grid-area: "copi";
+    } */
+
+    .footer-area {
+        grid-template-areas: 
+        "form"
+        "navigation"
+        "social-media"
+        "logo"
+        "copi";
+    }
+
+    .footer-area-md {
+        grid-template-areas: 
+        "logo           navigation  form"
+        "social-media   navigation  copi"
+        ;
+    }
+
+}
