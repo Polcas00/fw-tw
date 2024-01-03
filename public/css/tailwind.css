@@ -569,36 +569,32 @@ video {
   right: 0px;
 }
 
+.-right-1\/4 {
+  right: -25%;
+}
+
 .-top-12 {
   top: -3rem;
-}
-
-.top-24 {
-  top: 6rem;
-}
-
-.top-28 {
-  top: 7rem;
 }
 
 .-top-24 {
   top: -6rem;
 }
 
-.-right-1\/4 {
-  right: -25%;
+.top-24 {
+  top: 6rem;
 }
 
-.z-50 {
-  z-index: 50;
+.-z-10 {
+  z-index: -10;
 }
 
 .z-40 {
   z-index: 40;
 }
 
-.-z-10 {
-  z-index: -10;
+.z-50 {
+  z-index: 50;
 }
 
 .mx-auto {
@@ -687,16 +683,16 @@ video {
   min-width: 50px;
 }
 
+.max-w-2xl {
+  max-width: 42rem;
+}
+
 .max-w-\[140px\] {
   max-width: 140px;
 }
 
 .max-w-lg {
   max-width: 32rem;
-}
-
-.max-w-2xl {
-  max-width: 42rem;
 }
 
 .flex-1 {
@@ -989,26 +985,6 @@ video {
   transition-duration: 150ms;
 }
 
-.\[grid-area\:\'copi\'\] {
-  grid-area: 'copi';
-}
-
-.\[grid-area\:\'form\'\] {
-  grid-area: 'form';
-}
-
-.\[grid-area\:\'logo\'\] {
-  grid-area: 'logo';
-}
-
-.\[grid-area\:\'navigation\'\] {
-  grid-area: 'navigation';
-}
-
-.\[grid-area\:\'social-media\'\] {
-  grid-area: 'social-media';
-}
-
 @layer {
   .wrapper {
     margin-left: auto;
@@ -1032,38 +1008,6 @@ video {
     --tw-text-opacity: 1;
     color: hsl(0 0% 98% / var(--tw-text-opacity));
   }
-
-  /* .form{
-        grid-area: "form";
-    }
-    .navigation{
-        grid-area: "navigation";
-    }
-    .social-media{
-        grid-area: "social-media";
-    }
-    .logo{
-        grid-area: "logo";
-    }
-    .copy{
-        grid-area: "copi";
-    } */
-
-  .footer-area {
-    grid-template-areas: 
-        "form"
-        "navigation"
-        "social-media"
-        "logo"
-        "copi";
-  }
-
-  .footer-area-md {
-    grid-template-areas: 
-        "logo           navigation  form"
-        "social-media   navigation  copi"
-        ;
-  }
 }
 
 .peer:checked ~ .peer-checked\:translate-x-0 {
@@ -1084,6 +1028,26 @@ video {
     order: 1;
   }
 
+  .md\:col-start-1 {
+    grid-column-start: 1;
+  }
+
+  .md\:col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .md\:col-start-3 {
+    grid-column-start: 3;
+  }
+
+  .md\:row-\[1\/3\] {
+    grid-row: 1/3;
+  }
+
+  .md\:row-start-1 {
+    grid-row-start: 1;
+  }
+
   .md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -1093,13 +1057,13 @@ video {
     display: none;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:w-max {
     width: -moz-max-content;
     width: max-content;
-  }
-
-  .md\:w-full {
-    width: 100%;
   }
 
   .md\:max-w-xl {
