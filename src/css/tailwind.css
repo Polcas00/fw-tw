@@ -11,4 +11,16 @@
         @apply bg-bright-red text-very-light-gray block w-max py-4 px-12 rounded-full
     }
 
+    .card {
+        @apply bg-very-light-gray pt-16 pb-12 px-4 relative
+    }
+
+    .card-img {
+        @apply absolute w-24 aspect-square -top-12 inset-x-0 mx-auto
+    }
+
+    .card-title {
+        @apply text-xl font-bold mb-4 pt-2 text-very-dark-blue
+    }
+
 }
